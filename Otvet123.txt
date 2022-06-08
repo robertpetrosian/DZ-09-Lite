@@ -1,0 +1,37 @@
+*** списки
+lst_primer=[1,2,3,4,5,6,7,8,9]
+lst_elseone=[11,12,13]
+
+list.append(0)	Добавляет элемент 0 в конец списка
+list.extend(lst_elseone) Добавляет список lst_elseone в конец списка
+list.pop() выталкивает и возвращает последний элемент
+list.sort() сортировка списка
+list.index(11) поиск элемента с заданным значением
+
+*** строки
+S1 = 'Hello '
+S2 = 'World'
+S1 + S2	:: 'Hello World' Конкатенация (сложение строк)
+S1 * 3	:: 'Hello Hello Hello ' Повторение строки
+S1[4] :: 'o'	Обращение по индексу
+S1[2::2]	:: 'lo' Извлечение среза с шагом
+len(S1)	:: 6 Длина строки
+
+*** множества
+oldset = {3,4,5,6}
+newset = {1,2,3,4,5}
+len(newset) :: 5 - число элементов в множестве
+3 in newset :: True принадлежит ли 3 множеству newset
+newset == oldset :: False все элементы newset принадлежат oldset, все элементы oldset принадлежат newset .
+newset.union(oldset) - объединение нескольких множеств.
+newset.intersection(oldset)  - пересечение множеств
+set.difference(other, ...) или set - other - ... - множество из всех элементов set, не принадлежащие ни одному из other.
+
+*** словари
+newdict = {'fam':'Иванов', 'ima':'Сидор', 'otch':'Петрович'}
+newdict.fromkeys(list_keys, list_val ) - создает словарь с ключами из списка keys и значением списка list_val
+newdict.get('fio') - возвращает значение ключа, но если его нет, не бросает исключение, а возвращает default
+newdict.items() - возвращает пары (ключ, значение).
+newdict.keys() :: ['fam', 'ima', 'otch']
+newdict.values() :: ['Иванов', 'Сидор', 'Петрович']
+
